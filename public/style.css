@@ -32,6 +32,13 @@
   position: relative;
   width: 90%;
   margin: 2vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container .games article img {
@@ -61,8 +68,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -90,7 +98,7 @@
   position: absolute;
   height: 40%;
   padding-top: 20px;
-  margin: 28% auto;
+  margin: 23% auto;
   background-color: transparent;
 }
 
